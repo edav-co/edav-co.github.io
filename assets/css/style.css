@@ -1,0 +1,50 @@
+#avatar-pic{
+    height: 25%;
+    width: 25%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+#avatar-pic:hover{
+    box-shadow: 0 0 0 2px #118971;
+}
+
+.wrapper {
+    display: grid;
+    place-items: center;
+  }
+  
+  .typing-style {
+    width: 11.5ch;
+    animation: typing 2s steps(12), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 4em;
+    font-weight: 600;
+  }
+
+  #typing-styleP{
+    width: 11.5ch;
+    animation: typing 2s steps(12), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 1em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
