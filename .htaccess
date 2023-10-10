@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} !^edav-me-index/
+RewriteRule ^(.*)$ edav-me-index/$1 [L]
