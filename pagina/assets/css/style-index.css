@@ -1,0 +1,123 @@
+/* Color #1: Forest Green ----- #038c33 */
+/* Color #2: Medium Sea Green - #21bf58 */
+/* Color #3: Sandy Brown ------ #f2c84b */
+/* Color #4: Golden Rod ------- #ef9c35 */
+/* Color #5: Saddle Brown ----- #7a4818 */
+
+/* Estilos principales */
+
+:root{
+    --primary: #FFFFFF;
+    --dark-green: #038c33;
+    --light-green: #21bf58;
+    --gray: #efefef;
+}
+
+body{
+    overflow: hidden;
+    font-family: Monrserrat, sans-serif;
+    font-weight: 300;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+.bg-primary{
+    background-color: var(--primary) !important;
+}
+.bg-gray {
+    background-color: var(--gray) !important;
+}
+.bg-mix{
+    background: linear-gradient(180deg, var(--primary) 0%, var(--gray) 100%);
+}
+
+.btn{
+    border: none;
+}
+
+.btn-primary{
+    background-color: var(--light-green);
+    color: #000;
+}
+
+.btn-primary:hover{
+    background-color: var(--dark-green);
+    transition: all 0.3s ease-in-out;
+    color: #fff;
+}
+
+/* Estilos del sidebar */
+
+#sidebar-container{
+    min-height: 100vh;
+}
+
+#sidebar-container .logo{
+    padding: 1rem 1.5rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#sidebar-container .menu{
+    width: 18rem;
+}
+
+.sidebar-option{
+    background-color: var(--light-green);
+    border: var(--light-green);
+    border-radius: 15px;
+    text-align: center;
+    margin: 10px
+}
+
+.sidebar-option:hover{
+    background-color: var(--dark-green);
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar-option ion-icon {
+    font-size: 20px;
+    color: black;
+}
+
+/* Estilos del navbar */
+
+.button-menu{
+    background-color: var(--light-green);
+    border: var(--light-green);
+    text-align: center;
+    margin: 10px;
+}
+
+.button-menu:hover{
+    background-color: var(--dark-green);
+    transition: all 0.3s ease-in-out;
+}
+
+.avatar{
+    max-width: 35px;
+    border: #7a757d 1px solid;
+}
+
+/* Estilos del contenido */
+
+#content{
+    overflow-y: auto; /*Esto hará que el contenido sea scrollable y el sidebar no*/
+    height: 100vh;
+    padding-bottom: 5rem;
+}
+
+.stat{
+    border-right: 1px solid #efefef;
+}
+
+@media (max-width: 768px){
+    #sidebar-container{
+    display: none;
+    }
+    .stat{
+        border: none;
+    }
+}

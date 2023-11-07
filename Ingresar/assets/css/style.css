@@ -1,0 +1,58 @@
+:root {
+    --dark: #16191c;
+    --dark-x: #1e2126;
+    --light:  #ffffff;
+    --light-x: #f5f5f5;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300px;
+    color: var(--dark);
+}
+
+#ZenColor{
+    color: #1ebf57
+}
+
+.bacgrokund-light{
+    background-color: #ffffff !important;
+}
+
+.bglight{
+    background-color: var(--light) !important;
+}
+
+.bglight-x{
+    background-color: var(--light-x) !important;
+}
+
+.form-control, .btn{
+    min-height: 3.125rem;
+    line-height: initial;
+}
+
+.carousel-img1{
+    background-image: url(/FinanZen//Ingresar/assets/img/Carousel1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.carousel-img2{
+    background-image: url(/FinanZen/Ingresar/assets/img/Carousel2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+.spanIcon{
+    border-radius: 0.375rem 0px 0px 0.375rem;
+}
